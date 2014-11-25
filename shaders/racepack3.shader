@@ -166,23 +166,6 @@ rgbGen identityLighting
 
 
 
-textures/metal2/sci_fi_metal_base_spikes
-{
-qer_editorimage textures/metal2/sci_fi_metal_base_spikes
-surfaceparm	nodamage
-{
-map $lightmap
-rgbGen identityLighting
-}
-{
-map textures/metal2/sci_fi_metal_base_spikes
-blendFunc GL_DST_COLOR GL_ZERO
-rgbGen identityLighting
-}
-}
-
-
-
 textures/metal2/temple_basicwall
 {
 qer_editorimage textures/metal2/temple_basicwall
@@ -193,22 +176,6 @@ rgbGen identityLighting
 }
 {
 map textures/metal2/temple_basicwall
-blendFunc GL_DST_COLOR GL_ZERO
-rgbGen identityLighting
-}
-}
-
-
-textures/metal2/records
-{
-qer_editorimage textures/metal2/records
-surfaceparm	nodamage
-{
-map $lightmap
-rgbGen identityLighting
-}
-{
-map textures/metal2/records
 blendFunc GL_DST_COLOR GL_ZERO
 rgbGen identityLighting
 }
