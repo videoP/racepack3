@@ -268,3 +268,19 @@ textures/base_trim/border11light
 		rgbgen wave sin .9 .1 0 10
 	}
 }
+
+textures/racepack3/blue_slick
+{
+	qer_editorimage textures/racepack3/blue
+	surfaceparm slick
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/racepack3/blue.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+		tcGen environment 
+	}
+}
