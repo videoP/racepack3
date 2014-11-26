@@ -209,3 +209,42 @@ surfaceparm	nodamage
       tcMod scale .05 .05
         }
 }
+
+textures/racepack3/cretelighttrim01_red
+{
+	qer_editorimage textures/racepack3/cretelighttrim01_red.tga
+	q3map_lightimage textures/racepack3/cretelighttrim01_red.blend.tga
+	surfaceparm nomarks
+	q3map_lightsubdivide 32
+	q3map_surfacelight 1000
+	{
+		map textures/racepack3/cretelighttrim01_red.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/racepack3/cretelighttrim01_red.blend.tga
+		blendfunc add
+	}
+}
+
+
+textures/cos1/cosdglass
+{
+ qer_trans .5
+ surfaceparm trans
+ surfaceparm nolightmap 
+
+                      cull disable
+                 {
+                  map textures/cos1/cosdglass.tga
+                  tcGen environment
+                  tcMod turb 0 0.01 0 0.01
+                  tcmod scroll .0 .0
+                  blendfunc GL_ONE GL_ONE
+                  }
+}
