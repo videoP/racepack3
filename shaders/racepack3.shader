@@ -248,3 +248,23 @@ textures/cos1/cosdglass
                   blendfunc GL_ONE GL_ONE
                   }
 }
+
+textures/base_trim/border11light
+{
+	q3map_surfacelight 500
+	Q3map_lightimage textures/base_trim/border11light.glow.tga	
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/base_trim/border11light.tga
+		rgbGen identity
+		blendFunc GL_DST_COLOR GL_ZERO
+	}
+	{
+		map textures/base_trim/border11light.glow.tga
+		blendfunc GL_ONE GL_ONE
+		rgbgen wave sin .9 .1 0 10
+	}
+}
