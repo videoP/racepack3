@@ -3699,8 +3699,9 @@ racepack3/anticheat
 }
 // entity 4
 {
-"targetname" "short6"
+"message" "short6"
 "classname" "df_trigger_finish"
+"noise" "sound/interface/secret_area.mp3"
 // brush 0
 {
 ( 21984 6080 -2288 ) ( 21984 6080 -2708 ) ( 21984 6530 -2708 ) system/trigger 0 0 0 0.500000 0.500000 134217728 0 0

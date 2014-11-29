@@ -2177,7 +2177,9 @@ racepack3/anticheat
 }
 // entity 3
 {
+"message" "skin"
 "classname" "df_trigger_finish"
+"noise" "sound/interface/secret_area.mp3"
 // brush 0
 {
 ( -2304 -10240 3584 ) ( -2304 -10304 3584 ) ( -2304 -10304 3552 ) system/trigger 0 0 0 0.500000 0.500000 0 15 0
