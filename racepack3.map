@@ -1,11 +1,11 @@
 // entity 0
 {
-"_ambient" "25"
-"music" "music/kejim_base/kejimbase_action.mp3"
-"message" "Massassi Temple"
-"classname" "worldspawn"
-"_lightmapscale" "8"
 "_blocksize" "0"
+"_lightmapscale" "8"
+"classname" "worldspawn"
+"message" "Massassi Temple"
+"music" "music/kejim_base/kejimbase_action.mp3"
+"_ambient" "25"
 // brush 0
 {
 ( -1472 -480 -137 ) ( -1472 -480 -160 ) ( -1472 -456 -160 ) system/caulk 0 0 0 0.500000 0.500000 0 0 0
@@ -10773,24 +10773,28 @@ yavin/temple_vines
 }
 // entity 7
 {
+"target" "MapStart"
 "origin" "-608 -352 24"
 "angle" "180"
 "classname" "info_player_deathmatch"
 }
 // entity 8
 {
+"target" "MapStart"
 "origin" "1952 -352 24"
 "angle" "360"
 "classname" "info_player_deathmatch"
 }
 // entity 9
 {
+"target" "MapStart"
 "origin" "992 -2528 472"
 "angle" "90"
 "classname" "info_player_deathmatch"
 }
 // entity 10
 {
+"target" "MapStart"
 "origin" "928 2024 472"
 "angle" "270"
 "classname" "info_player_deathmatch"
@@ -10878,12 +10882,14 @@ yavin/temple_vines
 }
 // entity 27
 {
+"target" "MapStart"
 "origin" "672 -1760 24"
 "angle" "90"
 "classname" "info_player_deathmatch"
 }
 // entity 28
 {
+"target" "MapStart"
 "angle" "90"
 "origin" "1600 -1120 232"
 "classname" "info_player_deathmatch"
@@ -11292,18 +11298,21 @@ yavin/temple_vines
 }
 // entity 82
 {
+"target" "MapStart"
 "angle" "180"
 "origin" "1376 608 232"
 "classname" "info_player_deathmatch"
 }
 // entity 83
 {
+"target" "MapStart"
 "angle" "270"
 "origin" "-256 416 232"
 "classname" "info_player_deathmatch"
 }
 // entity 84
 {
+"target" "MapStart"
 "angle" "360"
 "origin" "-32 -1312 232"
 "classname" "info_player_deathmatch"
@@ -12201,36 +12210,42 @@ yavin/temple_vines
 }
 // entity 204
 {
+"target" "MapStart"
 "angle" "45"
 "origin" "-1568 -2208 472"
 "classname" "info_player_deathmatch"
 }
 // entity 205
 {
+"target" "MapStart"
 "angle" "315"
 "origin" "-1440 1696 472"
 "classname" "info_player_deathmatch"
 }
 // entity 206
 {
+"target" "MapStart"
 "angle" "225"
 "origin" "2848 1888 472"
 "classname" "info_player_deathmatch"
 }
 // entity 207
 {
+"target" "MapStart"
 "angle" "180"
 "origin" "2976 312 472"
 "classname" "info_player_deathmatch"
 }
 // entity 208
 {
+"target" "MapStart"
 "angle" "180"
 "origin" "2976 -1056 472"
 "classname" "info_player_deathmatch"
 }
 // entity 209
 {
+"target" "MapStart"
 "angle" "135"
 "origin" "2912 -2400 472"
 "classname" "info_player_deathmatch"
@@ -12247,6 +12262,7 @@ yavin/temple_vines
 }
 // entity 212
 {
+"target" "MapStart"
 "classname" "info_player_start"
 "origin" "672 1096 24"
 "angle" "270"
@@ -12682,4 +12698,128 @@ yavin/temple_vines
 "classname" "target_restrict"
 "origin" "668 -2500 548"
 "targetname" "maintele"
+}
+// entity 270
+{
+"targetname" "TFFAEnt1"
+"classname" "trigger_multiple"
+"target" "duelset"
+"spawnflags" "5"
+// brush 0
+{
+( 1535 -394 -586 ) ( 1535 -394 -600 ) ( 1533 -394 -600 ) system/trigger 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1533 -380 -586 ) ( 1533 -380 -600 ) ( 1535 -380 -600 ) system/trigger 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1535 -380 -586 ) ( 1535 -380 -600 ) ( 1535 -394 -600 ) system/trigger 127 48 0 0.500000 0.500000 134217728 0 0
+( 1533 -394 -586 ) ( 1533 -394 -600 ) ( 1533 -380 -600 ) system/trigger 127 48 0 0.500000 0.500000 134217728 0 0
+( 1533 -394 -600 ) ( 1535 -394 -600 ) ( 1535 -380 -600 ) system/trigger 128 -31 90 0.500000 0.500000 134217728 0 0
+( 1535 -394 -586 ) ( 1533 -394 -586 ) ( 1533 -380 -586 ) system/trigger 128 -31 90 0.500000 0.500000 134217728 0 0
+}
+}
+// entity 271
+{
+"targetname" "TFFAEnt2"
+"classname" "func_static"
+// brush 0
+{
+( 1536 -330 -586 ) ( 1536 -330 -600 ) ( 1535 -330 -600 ) system/nodraw 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1535 -316 -586 ) ( 1535 -316 -600 ) ( 1536 -316 -600 ) system/nodraw 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1536 -316 -586 ) ( 1536 -316 -600 ) ( 1536 -330 -600 ) system/nodraw 127 48 0 0.500000 0.500000 134217728 0 0
+( 1535 -330 -586 ) ( 1535 -330 -600 ) ( 1535 -316 -600 ) racepack3/decalGo -37 9 -180 0.218750 -0.218750 134217728 0 0
+( 1535 -330 -600 ) ( 1536 -330 -600 ) ( 1536 -316 -600 ) system/nodraw 128 -31 90 0.500000 0.500000 134217728 0 0
+( 1536 -330 -586 ) ( 1535 -330 -586 ) ( 1535 -316 -586 ) system/nodraw 128 -31 90 0.500000 0.500000 134217728 0 0
+}
+}
+// entity 272
+{
+"spawnflags" "5"
+"target" "exitffa3tele"
+"classname" "trigger_multiple"
+"targetname" "TFFAEnt1"
+// brush 0
+{
+( 1535 -330 -586 ) ( 1535 -330 -600 ) ( 1533 -330 -600 ) system/trigger 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1533 -316 -586 ) ( 1533 -316 -600 ) ( 1535 -316 -600 ) system/trigger 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1535 -316 -586 ) ( 1535 -316 -600 ) ( 1535 -330 -600 ) system/trigger 127 48 0 0.500000 0.500000 134217728 0 0
+( 1533 -330 -586 ) ( 1533 -330 -600 ) ( 1533 -316 -600 ) system/trigger 127 48 0 0.500000 0.500000 134217728 0 0
+( 1533 -330 -600 ) ( 1535 -330 -600 ) ( 1535 -316 -600 ) system/trigger 128 -31 90 0.500000 0.500000 134217728 0 0
+( 1535 -330 -586 ) ( 1533 -330 -586 ) ( 1533 -316 -586 ) system/trigger 128 -31 90 0.500000 0.500000 134217728 0 0
+}
+}
+// entity 273
+{
+"classname" "func_static"
+"targetname" "TFFAEnt2"
+// brush 0
+{
+( 1536 -394 -586 ) ( 1536 -394 -600 ) ( 1535 -394 -600 ) system/nodraw 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1535 -380 -586 ) ( 1535 -380 -600 ) ( 1536 -380 -600 ) system/nodraw 31 -207 -180 0.500000 -0.500000 134217728 0 0
+( 1536 -380 -586 ) ( 1536 -380 -600 ) ( 1536 -394 -600 ) system/nodraw 127 48 0 0.500000 0.500000 134217728 0 0
+( 1535 -394 -586 ) ( 1535 -394 -600 ) ( 1535 -380 -600 ) racepack3/decalAction 54 9 -180 0.218750 -0.218750 134217728 0 0
+( 1535 -394 -600 ) ( 1536 -394 -600 ) ( 1536 -380 -600 ) system/nodraw 128 -31 90 0.500000 0.500000 134217728 0 0
+( 1536 -394 -586 ) ( 1535 -394 -586 ) ( 1535 -380 -586 ) system/nodraw 128 -31 90 0.500000 0.500000 134217728 0 0
+}
+}
+// entity 274
+{
+"message" "^0You will now respawn in this room."
+"classname" "target_print"
+"origin" "1464 -408 -560"
+"targetname" "duelset"
+"spawnflags" "4"
+}
+// entity 275
+{
+"target" "maintele"
+"targetname" "exitffa3tele"
+"origin" "1472 -304 -544"
+"classname" "target_relay"
+}
+// entity 276
+{
+"spawnflags" "1"
+"count" "-1"
+"classname" "target_scriptrunner"
+"origin" "1464 -304 -568"
+"targetname" "exitffa3tele"
+"usescript" "RP3/unset"
+}
+// entity 277
+{
+"spawnflags" "1"
+"count" "-1"
+"usescript" "RP3/set"
+"targetname" "duelset"
+"origin" "1456 -384 -584"
+"classname" "target_scriptrunner"
+}
+// entity 278
+{
+"classname" "target_delay"
+"origin" "1093 -708 840"
+"targetname" "MapStart"
+"wait" "0.1"
+"target" "AssignNull"
+}
+// entity 279
+{
+"spawnflags" "1"
+"count" "-1"
+"usescript" "RP3/AN"
+"targetname" "AssignNull"
+"origin" "960 384 816"
+"classname" "target_scriptrunner"
+}
+// entity 280
+{
+"classname" "misc_teleporter_dest"
+"origin" "-48 64 -520"
+"angle" "0"
+"targetname" "TFFA3"
+}
+// entity 281
+{
+"targetname" "TFFA3"
+"angle" "0"
+"origin" "-48 -768 -520"
+"classname" "misc_teleporter_dest"
 }

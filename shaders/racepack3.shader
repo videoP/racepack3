@@ -30,6 +30,27 @@ textures/racepack3/decalGo
       }
 }
 
+textures/racepack3/decalAction
+{
+	qer_editorimage textures/racepack3/decalAction
+	surfaceparm nonsolid
+	surfaceparm nonopaque
+	surfaceparm trans
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	cull twosided
+	q3map_nolightmap
+	q3map_novertexshadows
+   	nopicmip
+      {
+	map textures/racepack3/decalAction
+	blendFunc GL_ONE GL_ZERO
+	alphaFunc GE128
+	depthWrite
+	rgbGen identity
+      }
+}
+
 textures/racepack3/invisilight_shader
 {
 	qer_editorimage	textures/colors/white
