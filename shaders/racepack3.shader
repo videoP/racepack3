@@ -368,3 +368,45 @@ textures/racepack3/q3dm0
 		tcMod scroll 0.05 0.05
 	}
 }
+
+textures/racepack3/siwa_water_2
+{
+	qer_editorimage textures/racepack3/siwa_water.tga
+	qer_trans .5
+	q3map_globaltexture
+	cull disable
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	surfaceparm trans
+	surfaceparm water
+	nopicmip
+	{
+		map textures/racepack3/siwa_water.tga
+		blendFunc blend
+		alphaFunc GE128
+		rgbgen identity
+		tcmod scale 0.5 0.5
+		tcmod scroll -.02 .001
+	}
+	{
+		map textures/racepack3/seawall_ripple1.tga
+		blendFunc GL_ONE GL_ONE
+		rgbGen wave sin 0.3 0.02 0 0.25
+		tcmod scale 0.01 0.01
+		tcmod scroll -.001 -.0002
+	}
+	{
+		map textures/racepack3/seawall_ripple1.tga
+		blendFunc GL_ONE GL_ONE
+		rgbGen wave sin 0.1 0.03 0 0.4
+		tcmod scale 1 1
+		tcmod scroll -.005 -.001
+	}
+	{
+		map textures/racepack3/siwa_shimshim1.tga
+		blendFunc GL_ONE GL_ONE
+		rgbGen wave sin 0.4 0.02 0 0.3
+		tcmod transform 0 1.5 1 1.5 2 1
+		tcmod scroll .005 -.001
+	}
+}
