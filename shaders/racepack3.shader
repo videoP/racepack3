@@ -305,3 +305,66 @@ textures/racepack3/blue_slick
 		tcGen environment 
 	}
 }
+
+textures/base_wall/bluemetal1b_shiny
+{
+	{
+		map $lightmap
+		rgbgen identity      
+	}
+	
+	{
+		map textures/base_wall/bluemetal1b_shiny.tga
+		blendFunc GL_DST_COLOR GL_SRC_ALPHA
+		rgbGen identity
+		alphaGen lightingSpecular
+	}
+
+			
+}
+
+textures/base_wall/bluemetal2_noisy
+{
+	qer_editorimage textures/base_wall/bluemetal2_shiny
+	surfaceparm metalsteps
+	{
+		map $lightmap
+		rgbgen identity      
+	}
+	
+	{
+		map textures/base_wall/bluemetal2_shiny.tga
+		blendFunc GL_DST_COLOR GL_SRC_ALPHA
+		rgbGen identity
+		alphaGen lightingSpecular
+	}			
+}
+
+textures/racepack3/q3dm0
+//used in q3dm0
+
+{
+	surfaceparm noimpact
+	surfaceparm nolightmap
+	surfaceparm sky
+
+	q3map_sun	.5 .6 .8 60 80 75
+	q3map_surfacelight 80
+
+	qer_editorimage textures/racepack3/bluedimclouds.tga
+
+	skyparms - 512 -
+	//cloudparms 512 full
+	{
+		map textures/racepack3/bluedimclouds.tga
+		tcMod scale 3 2
+		tcMod scroll 0.15 0.15
+		depthWrite
+	}
+	{
+		map textures/racepack3/topclouds.tga
+		blendFunc GL_ONE GL_ONE
+		tcMod scale 3 3
+		tcMod scroll 0.05 0.05
+	}
+}
