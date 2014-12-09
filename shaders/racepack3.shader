@@ -410,3 +410,66 @@ textures/racepack3/siwa_water_2
 		tcmod scroll .005 -.001
 	}
 }
+
+textures/base_trim/spiderbit
+{
+	q3map_lightimage textures/base_trim/spiderbit_fx.tga
+	q3map_surfacelight 100
+	
+        {
+		map $lightmap
+		rgbGen identity
+	}
+        {
+		map textures/base_trim/spiderbit.tga
+		blendfunc gl_dst_color gl_zero
+                rgbGen identity
+	}	
+        {
+		map textures/base_trim/spiderbit_fx.tga
+		blendfunc GL_ONE GL_ONE
+                rgbgen wave triangle .1 .5 0 7
+	}
+    	
+}
+
+textures/base_light/jaildr01_3
+{
+	surfaceparm nomarks
+	q3map_surfacelight 1000
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/base_light/jaildr01_3.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/base_light/jaildr01_3.blend.tga
+		rgbGen wave sin 0.5 0.5 1 1
+		blendfunc GL_ONE GL_ONE
+	}
+}
+
+textures/base_light/wsupprt1_12
+{
+	surfaceparm nomarks
+	q3map_surfacelight 1000
+	//light1
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/base_light/wsupprt1_12.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/base_light/wsupprt1_12.blend.tga
+		rgbGen wave sin 0.5 0.5 1 1
+		blendfunc GL_ONE GL_ONE
+	}
+}
