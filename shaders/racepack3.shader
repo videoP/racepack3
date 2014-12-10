@@ -340,6 +340,29 @@ textures/base_wall/bluemetal2_noisy
 	}			
 }
 
+textures/base_wall/bluemetalsupport2d_1
+{
+	
+
+	{
+		map textures/base_wall/chrome_env.tga
+	        rgbGen identity
+		tcGen environment
+		tcmod scale .25 .25
+	}
+	
+	{
+		map textures/base_wall/bluemetalsupport2d_1.tga
+		blendFunc blend	
+		rgbGen identity
+	}
+	{
+		map $lightmap
+		blendfunc filter
+		rgbGen identity
+	}
+}
+
 textures/racepack3/q3dm0
 //used in q3dm0
 
